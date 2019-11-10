@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: Open-Sans;
+    font-size: 15px; 
+}
+
+header {
+    background-color: #151537;
+    padding-top: 2rem;
+    padding-bottom: 5.6rem;
+}
+
+.logo-box {
+    width: 59%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9rem;    
+}
+
+.header_title_box {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+}
+
+.header_title_1,
+.header_title_2 {
+    display: block;
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header_title_2 {
+    padding-left: 48px;   
+}
+
+.app_store_button {
+    margin-bottom: 1rem;
+}
+
+.download_button {
+    display: flex;
+    justify-content: center;
+    background-color: #5e42b0;
+    width: 87%;
+    height: 2.4rem;   
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+.btn_logo {
+    display: block;
+    width: 1.3rem;
+    margin-right: 0.53rem;
+}
+
+.btn_text_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn_text {
+    color: #ffffff;
+    display: block;   
+    text-transform: uppercase;
+    font-size: 0.53rem;
+}
+
+.btn_text_top {
+    font-weight: 400;
+}
+
+.btn_text_bottom {
+    font-weight: 700;
+}
+
+.article_header {
+    font-size: 3.33rem;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    text-align: center;
+}
+
+.paragraph_header {
+    font-size: 1.5rem;
+    color: #c1c1c1;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+}
+
+.paragraph {   
+    padding: 60px 20px 50px 20px;
+}
+
+.connection {
+    background-color: #fafafa;
+}
+
+.collaboration {
+    background-color: #f5f4f9;
+}
+
+.growth_athlets {
+    background-color: #5e42b0;
+    color: #ffffff;
+}
