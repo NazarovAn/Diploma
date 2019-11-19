@@ -100,7 +100,7 @@
         margin-bottom: 12px;
     }
 
-    .athlets_number, .athlets_number_3 {
+    .paragraph_header::before, .paragraph_header_3::before {
         font-size: 18px;
     }
 
@@ -249,7 +249,7 @@
         padding-left: 52vw;
     }
 
-    .athlets_number, .athlets_number_3 {
+    .paragraph_header::before, .paragraph_header_3::before {
         font-size: 18px;
     }
 

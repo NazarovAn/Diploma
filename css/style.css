@@ -115,6 +115,8 @@ header:after {
 .athlets {
     font-size: 4.6vw;
     position: relative;
+    overflow: hidden;
+    counter-reset: athlets;
 }
 
 .article_header {
@@ -140,6 +142,8 @@ header:after {
 
 .players {
     position: relative;
+    overflow: hidden;
+    counter-reset: athlets;
 }
 
 .players_header::after {
@@ -190,7 +194,9 @@ header:after {
     color: #ffffff;
 }
 
-.athlets_number, .athlets_number_3 {
+.paragraph_header::before {
+    counter-increment: athlets;
+    content: "0" counter(athlets);    
     font-size: 4.3vw;
     font-weight: 700;
     color: #000000;
@@ -198,12 +204,22 @@ header:after {
     margin-right: 8px;
 }
 
-.athlets_number_3 {
+.paragraph_header_3::before {
     border-bottom: 4px solid #ffffff;
 }
 
-.color_8765dd {
+.color_8765dd::before {
     color: #8765dd;
+}
+
+.be_active {
+    counter-reset: be_active;
+}
+
+.photo_number_box::before {
+    counter-increment: be_active;
+    content: "0" counter(be_active);    
+    border-bottom: 4px solid #8f7bc8;
 }
 
 .be_active_image, .find_contact_image, .work_it_image {
@@ -256,11 +272,6 @@ header:after {
     align-items: center;
     top: -28vw;
 }
-
-.p_number {
-    border-bottom: 4px solid #8f7bc8;    
-}
-
 
 .photo_text {
     display: block;
