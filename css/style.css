@@ -112,11 +112,14 @@ header:after {
     font-weight: 700;
 }
 
+main {
+    overflow: hidden;
+}
+
 .athlets {
     font-size: 4.6vw;
     position: relative;
-    overflow: hidden;
-    counter-reset: athlets;
+    counter-reset: athlets; 
 }
 
 .article_header {
@@ -142,7 +145,6 @@ header:after {
 
 .players {
     position: relative;
-    overflow: hidden;
     counter-reset: athlets;
 }
 
@@ -216,12 +218,6 @@ header:after {
     counter-reset: be_active;
 }
 
-.photo_number_box::before {
-    counter-increment: be_active;
-    content: "0" counter(be_active);    
-    border-bottom: 4px solid #8f7bc8;
-}
-
 .be_active_image, .find_contact_image, .work_it_image {
     width: 100vw;
     height: 110vw;
@@ -249,6 +245,34 @@ header:after {
     margin-bottom: 66px;
 }
 
+.photo_text_box {
+    position: relative;
+}
+
+.photo_text_box::before {
+    content: "";
+    position: absolute;
+    font-size: 4.3vw;
+    color: #ffffff;
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0;
+    left: 20px;
+    top: -90px;
+}
+
+.photo_text_box::after {
+    position: absolute;
+    counter-increment: be_active;
+    content: "0" counter(be_active);    
+    border-bottom: 4px solid #8f7bc8;
+    left: 46px;
+    top: -70px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .photo_header {
     font-size: 9vw;
     text-transform: uppercase;
@@ -257,20 +281,6 @@ header:after {
     margin-top: 35px;
     margin-bottom: 24px;
     position: relative;
-}
-
-.photo_number_box {
-    position: absolute;
-    z-index: 1;
-    font-size: 4.3vw;
-    color: #ffffff;
-    width: 22vw;
-    height: 22vw;
-    background-color: #5e42b0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -28vw;
 }
 
 .photo_text {

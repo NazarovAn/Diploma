@@ -145,11 +145,17 @@
         background-image: url(../images/work-it_960.jpg);
     }
 
-    .photo_number_box {
+    .photo_text_box::before {
         width: 120px;
         height: 120px;
-        font-size: 24px;
         top: -162px;
+        left: 33px;
+    }
+
+    .photo_text_box::after {
+        font-size: 24px;
+        left: 77px;
+        top: -125px;
     }
 
     .photo_text {
@@ -322,16 +328,25 @@
         font-size: 80px;
     }
 
-    .photo_number_box {
-        font-size: 24px;
+    .photo_text_box::before {
         width: 170px;
         height: 160px;
-        top: 0;
-        left: -214px;
+        top: 257px;
+        left: -85px;
     }
 
-    .photo_number_box_2 {
-        left: 32vw;
+    .photo_text_box::after {
+        font-size: 24px;
+        left: -15px;
+        top: 315px;
+    }
+
+    .photo_text_box_left::before {
+        left: 41.5vw;
+    }
+    
+    .photo_text_box_left::after {
+        left: 50vw;
     }
 
     .photo_text {
@@ -375,13 +390,19 @@
     }
 }
 
+@media (min-width: 1000px) {
+    .photo_text_box_left::after {
+        left: 48.6vw;
+    }
+}
+
 @media (min-width: 1100px) {
     .athlets_header::after {
         left: 0;
     }
 
-    .photo_number_box_2 {
-        left: 33.3vw;
+    .photo_text_box_left::before {
+        left: 42.3vw;
     }
 }
 
@@ -391,8 +412,8 @@
         min-height: 110%;
     }
 
-    .photo_number_box_2 {
-        left: 34.4vw;
+    .photo_text_box_left::before {
+        left: 43.7vw;
     }
 }
 
@@ -401,8 +422,12 @@
         left: 16vw;
     }
 
-    .photo_number_box_2 {
-        left: 35.7vw;
+    .photo_text_box_left::before {
+        left: 44.7vw;
+    }
+
+    .photo_text_box_left::after {
+        left: 49.1vw;
     }
 }
 
@@ -411,7 +436,17 @@
         left: 20vw;
     }
 
-    .photo_number_box_2 {
-        left: 36.5vw;
+    .photo_text_box_left::before {
+        left: 45.5vw;
+    }
+}
+
+@media (min-width: 2200px) {
+    .photo_text_box_left::before {
+        left: 46.5vw;
+    }
+
+    .photo_text_box_left::after {
+        left: 49.4vw;
     }
 }
