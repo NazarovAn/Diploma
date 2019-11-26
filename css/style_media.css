@@ -78,7 +78,8 @@
     .athlets_header::after {
         background-image: url(../images/footballer_497.png);
         top: 130px;
-        left: -17.2vw;
+        left: auto;
+        right: 12.5vw;
     }
 
     .paragraph {
@@ -247,7 +248,8 @@
         background-image: url(../images/footballer_566.png);
         background-size: 568px;
         top: -80px;
-        left: -8vw;
+        left: auto;
+        right: 10vw;
     }
     
     .paragraph_header {
@@ -325,7 +327,7 @@
     }
 
     .photo_header {
-        font-size: 80px;
+        font-size: 5.7vw;
     }
 
     .photo_text_box::before {
@@ -342,11 +344,13 @@
     }
 
     .photo_text_box_left::before {
-        left: 41.5vw;
+        left: auto;
+        right: -85px;
     }
     
     .photo_text_box_left::after {
-        left: 50vw;
+        left: auto;
+        right: -14px;
     }
 
     .photo_text {
@@ -390,19 +394,9 @@
     }
 }
 
-@media (min-width: 1000px) {
-    .photo_text_box_left::after {
-        left: 48.6vw;
-    }
-}
-
 @media (min-width: 1100px) {
     .athlets_header::after {
         left: 0;
-    }
-
-    .photo_text_box_left::before {
-        left: 42.3vw;
     }
 }
 
@@ -411,42 +405,16 @@
         left: 8vw;
         min-height: 110%;
     }
-
-    .photo_text_box_left::before {
-        left: 43.7vw;
-    }
 }
 
 @media (min-width: 1600px) {
     .athlets_header::after {
         left: 16vw;
     }
-
-    .photo_text_box_left::before {
-        left: 44.7vw;
-    }
-
-    .photo_text_box_left::after {
-        left: 49.1vw;
-    }
 }
 
 @media (min-width: 1900px) {
     .athlets_header::after {
         left: 20vw;
-    }
-
-    .photo_text_box_left::before {
-        left: 45.5vw;
-    }
-}
-
-@media (min-width: 2200px) {
-    .photo_text_box_left::before {
-        left: 46.5vw;
-    }
-
-    .photo_text_box_left::after {
-        left: 49.4vw;
     }
 }
